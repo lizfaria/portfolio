@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Nunito:300,400,700" 
     rel="stylesheet" rel="stylesheet">
-    <!-- in your header -->
+    <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css">
-    <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.min.css">
 </head>
 <body>
+
+    <!-- Hamburger Menu -->
+    <label for="toggle" class="hamburger">
+        <i class="fas fa-bars hamburger"></i>
+    </label>
     
     <!-- HEADER BEGINS -->
     <header>
+        <!-- main nav begins -->
         <nav class="header__nav">
             <div class="wrapper">
                 <div class="nav-contents">
@@ -47,6 +53,37 @@
                 </div>
             </div>
         </nav>
+        <!-- main nav ends -->
+        <!-- responsive nav begins -->
+        <nav class="header__nav--responsive">
+            <input type="checkbox" id="toggle" name="toggle">
+            <div class="nav-contents active">
+                <img src="assets/logo.svg" alt="logo">
+                <ul>
+                    <li>
+                        <a href="#about">
+                            about me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">
+                            portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="wrapper">
             <div class="header--content">
                 <div class="title">
@@ -107,7 +144,7 @@
     <section id="portfolio">
         <div class="wrapper">
         <h3>Portfolio</h3>
-                <div class="projects--container">
+                <div class="projects--container js-flickity">
                     <figure>
                         <div class="image--container">
                         </div>
@@ -245,7 +282,7 @@
                         </div>
             
                         <label for="message"></label>
-                        <textarea name="message">Hi Liz, </textarea>
+                        <textarea name="message">Hey Liz, </textarea>
             
                         <input type="submit" value="send">
                     </form>
@@ -293,7 +330,9 @@
     </footer>
     <!-- FOOTER ENDS -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 
     <script>
@@ -302,6 +341,21 @@
                 offset: 100
             });
         });
+   
+        $(function () {
+            $('.hamburger').click(function(e) {
+                $(this).toggleClass('.active');
+                $('.header__nav--responsive').toggle('.active');
+                e.preventDefault()
+            });
+        });
+
+        
+        $(function() {
+            $('.gallery').flickity();
+            wrapAround: true
+        });
+              
     </script>
 
 </body>
