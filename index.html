@@ -101,7 +101,10 @@
         <h3>About Me</h3>
             <div class="wrapper">
                 <div class="about--content">
-                    <p class="paragraph">I am a Toronto-based Front-End Developer enrolled in an immersive web development program until June 8th 2018. I love web
+                    <div class="image--container">
+                        <img class="image" src="assets/headshot.jpg" alt="headshot of Liz Faria">
+                    </div>
+                    <span class="paragraph">I am a Toronto-based Front-End Developer enrolled in an immersive web development program until June 8th 2018. I love web
                     development because it challenges me everyday to research, experiment and problem solve. 
                     I am looking to collaborate with teams that share a vision to create organized, responsive and accessible web content.
     
@@ -130,11 +133,8 @@
                     what do i value?
                     who am i? 
                     what do i have to offer?  -->
-                    </p>
-    
-                    <div class="image--container">
-                        <img class="image" src="assets/headshot.jpg" alt="headshot of Liz Faria">
-                    </div>
+                     </span>
+
                 </div>
             </div>
     </section>
@@ -144,30 +144,32 @@
     <section id="portfolio">
         <div class="wrapper">
         <h3>Portfolio</h3>
-                <div class="projects--container js-flickity">
+                <div class="projects--container .flickity-js">
                     <figure>
                         <div class="image--container">
+                            <img src="assets/portfolio-1.png" alt="mac desktop mockup of javascript API project">
                         </div>
                         <figcaption>
-                            <h4>React Interactive</h4>
+                            <h4>Javascript/Jquery API</h4>
                             <p class="paragraph--caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime!</p>
                             <p class="paragraph--description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, sequi. Harum, ipsam consequuntur dolorum sapiente corrupti quos labore. Modi, similique quos saepe rem voluptate?</p>
                             <p class="figcaption__link">
-                                <a href="#" target="_blank">Check it Out</a>
+                                <a href="https://lizfaria.github.io/on-the-case/" target="_blank">Check it Out</a>
                             </p>
                         </figcaption>
                     </figure>
     
                     <figure>
                         <div class="image--container">
+                            <img src="assets/portfolio-2.png" alt="mac desktop mockup of React API project">
                         </div>
                         <figcaption>
-                            <h4>Javascript/Jquery Api</h4>
+                            <h4>React API</h4>
                             <p class="paragraph--caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime!</p>
                             <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, sequi. Harum, ipsam consequuntur dolorum sapiente
                                 corrupti quos labore. Modi, similique quos saepe rem voluptate?</p>
                             <p class="figcaption__link">
-                                <a href="#" target="_blank">Check it Out</a>
+                                <a href="https://devavengers-f4922.firebaseapp.com/" target="_blank">Check it Out</a>
                             </p>
                         </figcaption>
                         
@@ -175,6 +177,7 @@
     
                     <figure>
                         <div class="image--container">
+                            <img src="assets/portfolio-3.png" alt="mac desktop mockup of CSS PSD Conversion project">
                         </div>
                         <figcaption>
                             <h4>CSS PSD conversion</h4>
@@ -182,13 +185,14 @@
                             <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, sequi. Harum, ipsam consequuntur dolorum sapiente
                             corrupti quos labore. Modi, similique quos saepe rem voluptate?</p>
                             <p class="figcaption__link">
-                                <a href="#" target="_blank">Check it Out</a>
+                                <a href="lizfaria.ca/sunny-day-quiz" target="_blank">Check it Out</a>
                             </p>
                         </figcaption>
                     </figure>
     
                     <figure>
                         <div class="image--container">
+                            <img src="assets/portfolio-4.png" alt="mac desktop mockup of javascript project">
                         </div>
                         <figcaption>
                             <h4>Javascript Quiz</h4>
@@ -196,7 +200,7 @@
                             <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, sequi. Harum, ipsam consequuntur dolorum sapiente
                             corrupti quos labore. Modi, similique quos saepe rem voluptate?</p>
                             <p class="figcaption__link">
-                                <a href="#" target="_blank">Check it Out</a>
+                                <a href="lizfaria.ca/maxshop" target="_blank">Check it Out</a>
                             </p>
                         </figcaption>
                     </figure>
@@ -288,6 +292,7 @@
                     </form>
             
                     <div class="container">
+                        <img src="assets/logo.svg" alt="logo">
                         <div class="email">
                             <a href="mailto:hello@lizfaria.ca"><h4>hello@lizfaria.ca</h4></a>
                         </div>
@@ -350,13 +355,18 @@
             });
         });
 
-        
         $(function() {
-            $('.gallery').flickity();
-            wrapAround: true
+            $('.projects--container').flickity({
+                wrapAround: true,
+                watchCSS: true,
+                freeScroll: true
+            });
         });
+        
               
     </script>
 
 </body>
 </html>
+
+<!--THEME FOREST-ardis-creative-agency-psd-template -->

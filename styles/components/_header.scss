@@ -1,9 +1,15 @@
 header {
     height: 100vh;
-    background-color:$orange;
-        .wrapper {
+    // background-color:$orange;
+    background-image: url(../../assets/hero/hero-4.jpg);
+    background-size:cover;
+    .wrapper {
         height:100%;
-        }
+    }
+    @media(max-width:600px) {
+        background-image: url(../../assets/hero/hero-1.jpg);
+    }
+
 } 
 
 .header--content { 
