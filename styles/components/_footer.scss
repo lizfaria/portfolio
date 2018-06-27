@@ -2,6 +2,8 @@ footer {
     text-align:center;
     color: $white;
     background-color: $blacker;
+    margin: 0;
+    // border-radius:0;
     
 
     p {
@@ -9,7 +11,7 @@ footer {
         margin: 0;
         display: flex;
         justify-content: space-around;
-        @media(max-width:900px) {
+        @media(max-width:1000px) {
             display: none;
         }
     }

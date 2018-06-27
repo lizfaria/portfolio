@@ -7,8 +7,7 @@
     <title>Liz Faria</title>
     <link rel="icon" href="assets/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Nunito:300,400,700" 
-    rel="stylesheet" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif:700" rel="stylesheet">
     <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css">
@@ -18,7 +17,8 @@
 
     <!-- Hamburger Menu -->
     <label for="toggle" class="hamburger">
-        <i class="fas fa-bars hamburger"></i>
+        <img src="assets/logo.svg" alt="logo">
+        <i class="fas fa-bars ya"></i>
     </label>
     
     <!-- HEADER BEGINS -->
@@ -57,9 +57,9 @@
         <!-- responsive nav begins -->
         <nav class="header__nav--responsive">
             <input type="checkbox" id="toggle" name="toggle">
-            <div class="nav-contents active">
-                <img src="assets/logo.svg" alt="logo">
-                <ul>
+            <div class="nav-contents">
+                <!-- <img src="assets/logo.svg" alt="logo"> -->
+                <ul class="ul__responsive">
                     <li>
                         <a href="#about">
                             about me
@@ -83,13 +83,18 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="wrapper">
+        <!-- <img class="header__logo" src="assets/logo.svg" alt="logo"> -->
+        <div class="wrapper header__wrapper">
             <div class="header--content">
+            
                 <div class="title">
-                    <h1>Liz</h1> 
-                    <h1>Faria</h1>
-                    <h2>Front-End Web Developer</h2>
+                    <!-- <img src="assets/logo.svg" alt="logo"> -->
+
+                    <!-- <h1>Liz</h1> 
+                    <h1>Faria</h1> -->
+                    <!-- <img src="assets/logo.svg" alt="logo"> -->
+                    <h2 class="header-2"><br>Web <br>Developer</h2>
+                    <!-- <h2 class="header-2--responsive">Web Developer</h2> -->
                 </div>
             </div>
         </div>
@@ -98,75 +103,27 @@
 
     <!-- ABOUT ME BEGINS -->
     <section id="about">
-        <h3>About Me</h3>
+        <h3>About Me
+            <img src="assets/end-tag.svg" alt="">
+        </h3>
             <div class="wrapper">
                 <div class="about--content clearfix">
                     <div class="image--container">
                         <img class="image" src="assets/headshot.jpg" alt="headshot of Liz Faria">
                     </div>
                     <span class="paragraph"> 
-                        <p>I am a Toronto-based Front-End Developer. I am seeking to collaborate with a team that shares a vision to create DRY, interactive, beautiful and accessible web content.</p>
+                        <p> Hi, my name's Liz Faria. I’m a web developer based in Toronto. I love the limitless possibilities for learning and creating that come with web development.
+                        I'm dedicatd to writing organized code, and producing dynamic, responsive, accessible sites. I'm looking to join a team that values collaborative problem-solving,
+                        communication and fun. </p>
+                        <p class="paragraph--large-display">I love solving problems and in web development, a case is never closed. Languages are constantly developing, and other developers stretch my imagination of what is possible everyday. I work hard
+                        because I want to be part of expanding possibilities and creating content that makes the web awesome.</p>
+
                         
-                        <p class="paragraph--large-display">I love web development because it makes me feel like a detective solving mysteries. I love finding leads on new tools or
-                            hot tips on ways of using mediums I am already familiar with. In web development, a case is never closed. Languages are
-                            constantly developing, and every day developers stretch our imagination of what is even possible. I work hard because
-                            I want put out content that makes the web a more awesome place.</p>
+                        <p>View my resume 
+                            <a target="_blank" href="/liz-faria-cv.pdf" class="link--resume">here</a>
+                        </p>
                         
-                        <p class="paragraph--large-display"> Something that surprised me about web development is how collaborative it is. Toronto has an incredible community of developers
-                            who share their knowledge and enthusiasm for code through mentoring, workshops and events. I love being part of this
-                            community. </p>
-
-
-                    <!-- <p>I am a Toronto-based Front-End Developer seeking to collaborate with a team that shares a vision to create clean, interactive, and accessible web content.</p>
-                    
-                    <p>I love web development because it makes me feel like a detective solving mysteries. I am rabidly curious about how to use tools and languages to create Lynn Fischer
-                        and Wes Bos, I know the best way to understand a tool is to pick it up and get involved with it directly. I love the
-                        challenge of dissembling other people's code and creating projects of my own. Every lead in new tools or new ways of
-                        using tools I already know is super exciting. In web development, a case is never closed. Languages are constantly developing,
-                        and every day people are creating things that stretch our imagination of what is even possible. I work hard because I
-                        want put out content that makes the web a more awesome place.</p>
-                    
-                    <p>Something that surprised me about web development is how collaborative it is. Locally, in Toronto, there is a strong community
-                        of developers who share their knowledge and enthusiasm for code through mentoring, workshops and events. Online, the
-                        global network of developers helping each other in forums and sharing tutorials is incredible. Once I discovered this
-                        community, all of my preconceptions about the the solitary antisocial coder were shattered. It's obvious to me now that
-                        coding is a very social activity because bringing a beautiful, complex, and functional product to fruition takes collaboration.
-                        </p>content, and while I love gathering research and following inspiring sources like  -->
-
-
-                    <!-- Xsublim
-                        
-                    I love web
-                    development because it challenges me everyday to research, experiment and problem solve. 
-                    I am looking to collaborate with teams that share a vision to create organized, responsive and accessible web content.
-    
-                    I am a reliable and commited person. I want to work hard because I want put out content that makes the web a more awesome place. 
-    
-                    canoe tripping - teams, organization, leadership, respect for the needs of others 
-                    liberal arts - writing and speaking, independent research, deadlines 
-                    portuguese - passion for language  -->
-    
-                     <!-- It wasn’t uncommon for artists to team up for large installations or exhibitions, but it was nothing compared to the collaboration
-                    I’ve seen with the web industry. Shipping a quality product requires coordination between several people with varied skill
-                    sets. And the different perspectives often push our results farther than we ever could on our own. Of course this also extends
-                    beyond our immediate teams. Designers and developers take their work and open source it, allowing others to benefit from
-                    it and to contribute to it. A beautiful product could be built by strangers scattered all over the world. To me, that’s romantic.
-                     There’s nothing quite like viewing an art piece in person. But galleries have operating hours and some are thousands of
-                    miles away. The web allows people to experience your work at any hour of the day and, especially now, from anywhere they
-                    wish. When I was introduced to responsive design, I fell in love all over again. Connect as many people to your content as
-                    possible and give them the best possible experience. Accessibility is king. And really, two small words sealed the deal for
-                    me: view source. And later: inspect element. See how things work, learn from the best, and teach others just by doing. There’s
-                    got to be a million ways people define art. For me, it’s all about delighting others and connecting people. Designing for
-                    the web has allowed me to do that and more, and somehow I get paid to do it.
-    
-                     . Don’t pass on opportunities to learn new things. You can be good at them. Curiosity and a passion for learning are qualities
-                    of a good designe
-    
-                    what do i value?
-                    who am i? 
-                    what do i have to offer?  -->
                      </span>
-
                 </div>
             </div>
     </section>
@@ -175,18 +132,20 @@
     <!-- PORTFOLIO BEGINS -->
     <section id="portfolio">
         <div class="wrapper">
-        <h3>Portfolio</h3>
+        <h3>Portfolio
+            <img src="assets/end-tag.svg" alt="">
+        </h3>
                 <div class="projects--container .flickity-js">
                     <figure>
                         <div class="image--container">
                             <a href="https://lizfaria.github.io/on-the-case/" target="_blank">
-                                <img src="assets/portfolio-1.png" alt="mac desktop mockup of javascript API project">
+                                <img src="assets/portfolio-1.png" alt="mac desktop mockup of JavaScript API project">
                             </a>
                         </div>
                         <figcaption>
-                            <h4>Javascript/Jquery API</h4>
+                            <h4>JavaScript/jQuery API</h4>
                             <p class="paragraph--caption"> <span>Google Maps</span> <span>AJAX</span> <span>Team Programming</span> </p>
-                            <p class="paragraph--description">Using Google Maps and Refuge API's we created an interactive site that allows users to find accessible and unisex washrooms</p>
+                            <p class="paragraph--description">Using Google Maps and Refuge APIs, this site enables users to find accessible and unisex washrooms</p>
                             <p class="figcaption__link">
                                 <a href="https://lizfaria.github.io/on-the-case/" target="_blank">Check it Out</a>
                             </p>
@@ -194,53 +153,81 @@
                     </figure>
                     
                     <figure>
+
+                        <figcaption>
+                            <h4>React API</h4>
+                            <p class="paragraph--caption">
+                                <span>React Router</span>
+                                <span>AXIOS</span>
+                                <span>Firebase Database & Authentication</span>
+                                <span>Team Programming</span>
+                            </p>
+                            <p class="paragraph--description">Users can search for comics from the Marvel API, and login to save any results to their personal collection</p>
+                            <p class="figcaption__link">
+                                <a href="https://devavengers-f4922.firebaseapp.com/" target="_blank">Check it Out</a>
+                            </p>
+                        </figcaption>
+                        
                         <div class="image--container">
                             <a href="https://devavengers-f4922.firebaseapp.com/" target="_blank">
                                 <img src="assets/portfolio-2.png" alt="mac desktop mockup of React API project">
                             </a>
                         </div>
+                        
+                    
+                    </figure>
+                    <figure>
                         <figcaption>
-                            <h4>React API</h4>
-                            <p class="paragraph--caption"> <span>React Router</span>  <span>AXIOS</span>  <span>Firebase Database & Authentication</span>  <span>Team Programming</span>  </p>
-                            <p class="paragraph--description">Followed an assigned agency style guide and fulfilled requirements to create a searchbar for user input and results
-                                where users can choose to save content to their personal collections</p>
+                            <h4>JavaScript API</h4>
+                            <p class="paragraph--caption">
+                                <span>jQuery</span>
+                            </p>
+                            <P class="paragraph--description">An application that displays recipe data from the Yummly Api using user search input and allergy / dietary restriction filters </P>
                             <p class="figcaption__link">
-                                <a href="https://devavengers-f4922.firebaseapp.com/" target="_blank">Check it Out</a>
+                                <a href="/mangia" target="_blank">Check it Out</a>
                             </p>
                         </figcaption>
                     
-                    </figure>
-                    
-                    <figure>
                         <div class="image--container">
-                            <a href="/sunny-day-quiz" target="_blank">
-                                <img src="assets/portfolio-3.png" alt="mac desktop mockup of CSS PSD Conversion project">
+                            <a href="/mangia" target="_blank">
+                                <img src="assets/portfolio-mangia.png" alt="mac desktop mockup of JavaScript project">
                             </a>
                         </div>
-                        <figcaption>
-                            <h4>CSS PSD conversion</h4>
-                            <p class="paragraph--caption"> <span>CSS</span> <span>SASS</span> <span>Responsive</span> <span>BEM</span> <span>JQuery</span>  </p>
-                            <P class="paragraph--description">Convert a Fashion PSD into an interactive responsive single page site</P>
-                            <p class="figcaption__link">
-                                <a href="/sunny-day-quiz" target="_blank">Check it Out</a>
-                            </p>
-                        </figcaption>
-                    </figure>
                     
+                    </figure>
                     <figure>
                         <div class="image--container">
                             <a href="/maxshop" target="_blank">
-                                <img src="assets/portfolio-4.png" alt="mac desktop mockup of javascript project">
+                                <img src="assets/portfolio-4.png" alt="mac desktop mockup of CSS PSD Conversion project">
                             </a>
                         </div>
                         <figcaption>
-                            <h4>JavaScript Quiz</h4>
-                            <p class="paragraph--caption"><span>jQuery</span> <span>Responsive</span> <span>BEM</span></p>
-                            <P class="paragraph--description">A javascript quiz that tells you what to do on a Sunny Day</P>
+                            <h4>CSS PSD Conversion</h4>
+                            <p class="paragraph--caption"> <span>CSS</span> <span>SASS</span> <span>Responsive</span> <span>jQuery</span>  </p>
+                            <P class="paragraph--description">Conversion of a Fashion PSD into an interactive single-page site</P>
                             <p class="figcaption__link">
                                 <a href="/maxshop" target="_blank">Check it Out</a>
                             </p>
                         </figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <figcaption>
+                            <h4>JavaScript Quiz</h4>
+                            <p class="paragraph--caption">
+                                <span>jQuery</span>
+                            </p>
+                            <P class="paragraph--description">A JavaScript quiz that tells you where to go in Toronto on a sunny day</P>
+                            <p class="figcaption__link">
+                                <a href="/sunny-day-quiz" target="_blank">Check it Out</a>
+                            </p>
+                        </figcaption>
+
+                        <div class="image--container">
+                            <a href="/sunny-day-quiz" target="_blank">
+                                <img src="assets/portfolio-3.png" alt="mac desktop mockup of JavaScript project">
+                            </a>
+                        </div>
                     </figure>
                 </div>
             </div>
@@ -250,7 +237,10 @@
     <!-- SKILLS BEGINS -->
     <section id="skills">
         <div class="wrapper">
-            <h3>My Skills</h3>
+            <h3>My Skills
+                <img src="assets/end-tag.svg" alt="">
+
+            </h3>
             <!-- <div class="wrapper"> -->
                 <div class="container">
                     <ul>                    
@@ -266,11 +256,11 @@
                             <i title="react" aria-hidden="true"  class="fab fa-react"></i>
                             <p class="skill paragraph">React</p>
                         </li>
-                        <li class="javascript">
-                            <i title ="javascript" aria-hidden="true"  class="fab fa-js"></i>
-                            <p class="skill paragraph">Javascript</p>
+                        <li class="JavaScript">
+                            <i title ="JavaScript" aria-hidden="true"  class="fab fa-js"></i>
+                            <p class="skill paragraph">JavaScript</p>
                         </li>
-                        <li class="jquery">
+                        <li class="jQuery">
                             <i title="jQuery" aria-hidden="true" <i class="devicon-jquery-plain"></i>
                             <p class="skill paragraph">jQuery</p>
                         </li>
@@ -280,10 +270,10 @@
                             <i title="sass" aria-hidden="true"  class="fab fa-sass"></i>
                             <p class="skill paragraph">Sass</p>
                         </li>
-                        <li class="github" title="Github">
+                        <!-- <li class="github" title="Github">
                             <i class="fab fa-github"></i>
                             <p class="skill paragraph">Github</p>
-                        </li>
+                        </li> -->
                         <li class="git" title="Git">
                             <i class="devicon-git-plain"></i>
                             <p class="skill paragraph">Git</p>
@@ -314,47 +304,52 @@
     <section id="contact">
        <div class="wrapper">
             <div class="container">
-                <h3>Let's Chat</h3>
+                <h3>Let's Chat
+                    <img src="assets/end-tag.svg" alt="">
+                </h3>
                 <div class="links--container small-display">
                     <!-- <img src="assets/logo.svg" alt="logo"> -->
-                    
                     <div class="social">
                         <ul>
                             <li>
-                                <a href='https://twitter.com/@lizcookscode'>
+                                <a target="_blank" href='https://twitter.com/@lizcookscode'>
                                     <i class='fab fa-twitter' aria-hidden='true' title='twitter'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href='https://github.com/lizfaria'>
+                                <a target="_blank" href='https://github.com/lizfaria'>
                                     <i class='fab fa-github' aria-hidden='true' title='github'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href='https://www.linkedin.com/in/liz-faria-23437314a/'>
+                                <a target="_blank" href='https://www.linkedin.com/in/liz-faria-23437314a/'>
                                     <i class='fab fa-linkedin-in' aria-hidden='true' title='linkedin'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href='https://medium.com/@efaria93'>
+                                <a target="_blank" href='https://medium.com/@efaria93'>
                                     <i class='fab fa-medium-m' aria-hidden='true' title='medium'></i>
                                 </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="mailto:hello@lizfaria.ca"><i class="fas fa-envelope" aria-hidden='true' title='e-mail'></i></a>
+                                
                             </li>
                         </ul>
                     </div>
 
-                    <div class="email">
+                    <!-- <div class="email">
                         <a href="mailto:hello@lizfaria.ca">
                             <h4>hello@lizfaria.ca</h4>
                         </a>
-                    </div>
+                    </div> -->
 
                 </div>
                 <div class="contact-container">
                     <!-- <p class="paragraph small-display">or use the contact form to get in touch</p> -->
                     
                     <div class="contact--info">
-                        <form action="" class="contact__form">
+                        <form action="https://formspree.io/hello@lizfaria.ca" method="POST" class="contact__form">
                             <div class="input--container">
                                 <label for="name"></label>
                                 <input type="text" name="name" required placeholder="your name">
@@ -366,35 +361,38 @@
                             <label for="message"></label>
                             <textarea name="message">Hey Liz, </textarea>
                 
-                            <input type="submit" value="send">
+                            <input type="submit" class="form__submit" id="button" value="send">
                         </form>
                 
                         <div class="links--container large-display">
                             <!-- <img src="assets/logo.svg" alt="logo"> -->
-                            <div class="email">
-                                <a href="mailto:hello@lizfaria.ca"><h4>hello@lizfaria.ca</h4></a>
-                            </div>
+                            <!-- <div class="email">
+                                <a target="_blank" href="mailto:hello@lizfaria.ca"><h4>hello@lizfaria.ca</h4></a>
+                            </div> -->
                             <div class="social">
                                <ul>
                                     <li>
-                                        <a href='https://twitter.com/@lizcookscode'>
+                                        <a target="_blank" href='https://twitter.com/@lizcookscode'>
                                             <i class='fab fa-twitter' aria-hidden='true' title='twitter'></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href='https://github.com/lizfaria'>
+                                        <a target="_blank" href='https://github.com/lizfaria'>
                                             <i class='fab fa-github' aria-hidden='true' title='github'></i>
                                         </a>
                                     </li>
                                     <li>
-                                         <a href='https://www.linkedin.com/in/liz-faria-23437314a/'>
+                                         <a target="_blank" href='https://www.linkedin.com/in/liz-faria-23437314a/'>
                                         <i class='fab fa-linkedin-in' aria-hidden='true' title='linkedin'></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href='https://medium.com/@efaria93'>
+                                        <a href='https://medium.com/@efaria93' target="_blank">
                                             <i class='fab fa-medium-m' aria-hidden='true' title='medium'></i>
                                         </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="mailto:hello@lizfaria.ca"><i class="fas fa-envelope" aria-hidden='true' title='e-mail'></i></a>
                                     </li>
                                </ul>
                             </div>
@@ -409,29 +407,61 @@
     <!-- FOOTER BEGINS -->
     <footer>
     <div class="wrapper">
-        <p class="paragraph">&copy Liz Faria 2018 <span>Headshot by &copy Pam Lau 2018</span> <span>Photography and logo by &copy Will Parks 2018</span></photos></p>
+        <p class="paragraph">&copy Liz Faria 2018 <span>photography and logo by &copy Will Parks 2018</span></photos></p>
     </div>
     </footer>
     <!-- FOOTER ENDS -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jQuery.com/jQuery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-smooth-scroll/2.1.2/jQuery.smooth-scroll.min.js"></script> -->
 
     <script>
         $(function () {
-            $('a').smoothScroll({
-                offset: 100
+                // Add smooth scrolling to all links
+                $("a").on('click', function (event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery’s animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
             });
-        });
    
         $(function () {
-            $('.hamburger').click(function(e) {
-                $(this).toggleClass('.active');
-                $('.header__nav--responsive').toggle('.active');
-                e.preventDefault()
+
+            let active = false;
+            $('.hamburger').click(function(e) { 
+                 if (active) {
+                    $('.ya').addClass('fa-bars').removeClass('fa-times');
+                    $('.header__nav--responsive').fadeOut();
+                    active = false;
+                } else{
+                     $('.ya').addClass('fa-times').removeClass('fa-bars');
+                     $('.header__nav--responsive').fadeIn();
+                     active = true;
+                }
             });
+            $('.ul__responsive>li').on('click', () => {
+                $('.ya').addClass('fa-bars').removeClass('fa-times');
+                $('.header__nav--responsive').fadeOut();
+                        active = false;
+
+            })
         });
 
         $(function() {
@@ -441,8 +471,13 @@
                 freeScroll: true
             });
         });
+
+        if ($(window).width() < 480) {   
+             $('#button').attr('value', 'get in touch');
+        }
+            
         
-              
+          
     </script>
 
 </body>

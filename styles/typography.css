@@ -1,0 +1,237 @@
+h1 {
+  font-size: 5.5rem;
+  color: #222;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    color: whitesmoke;
+    display: inline-block;
+  }
+}
+
+h2 {
+  font-size: 5.5rem;
+  color: #222;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  width: 100%;
+  padding: 0 0 0 3%;
+}
+
+@media (max-width: 1475px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    color: whitesmoke;
+    font-size: 1.75rem;
+    font-family: "PT Serif", serif;
+    font-weight: 300;
+  }
+}
+
+.header-2--responsive {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header-2 {
+    display: none;
+  }
+  .header-2--responsive {
+    display: block;
+  }
+}
+
+h3 {
+  font-family: "PT Serif", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+h3 img {
+  position: absolute;
+  width: 25px;
+  margin-left: 10px;
+  bottom: 0;
+}
+
+h4 {
+  font-family: "PT Serif", serif;
+  color: #222;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 5% 0;
+  padding: 0;
+}
+
+.paragraph--caption {
+  font-family: "PT Sans", sans-serif;
+  color: #5a5858;
+  font-weight: 400;
+  text-align: center;
+}
+
+.paragraph--caption span {
+  padding: 0 1%;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  .paragraph--caption {
+    margin: 0 auto 10%;
+  }
+}
+
+.paragraph--description {
+  text-align: center;
+  line-height: 1.5rem;
+  color: #5a5858;
+  margin: 3% 8% 8%;
+}
+
+@media (max-width: 500px) {
+  .paragraph--description {
+    display: none;
+  }
+}
+
+.form__submit {
+  text-decoration: none;
+  color: #F7941E;
+  transition: all .4s ease-in-out;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s ease all;
+  z-index: 4;
+  box-shadow: 3px 3px orange;
+  border: none;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form__submit::before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #F7941E;
+}
+
+.form__submit:active {
+  box-shadow: 0;
+}
+
+.form__submit:active::before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  opacity: 1;
+}
+
+.figcaption__link {
+  box-shadow: -1px 1px 4px #BDBEC0;
+  border: #ED1C24 3px solid;
+  background-color: transparent;
+}
+
+.figcaption__link, .form__submit {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+  .figcaption__link, .form__submit {
+    width: 150px;
+    margin: 0 auto;
+  }
+}
+
+.figcaption__link a, .form__submit a {
+  text-decoration: none;
+  color: #ED1C24;
+  transition: all .4s ease-in-out;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s ease all;
+  z-index: 4;
+}
+
+.figcaption__link::before, .form__submit::before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #ED1C24;
+}
+
+.figcaption__link:hover a, .form__submit:hover a {
+  color: white;
+}
+
+.figcaption__link:hover::before, .form__submit:hover::before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.paragraph {
+  font-family: "PT Sans", sans-serif;
+  color: #5a5858;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .paragraph {
+    font-size: 1rem;
+  }
+}
+
+.link--resume {
+  color: #F7941E;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.link--resume:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=typography.css.map */
