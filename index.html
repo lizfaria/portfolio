@@ -5,33 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Liz Faria</title>
-    <link rel="icon" href="assets/favicon.png">
+    <link rel="icon" href="assets/end-tag.svg">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif:700" rel="stylesheet">
     <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.min.css">
 </head>
 <body>
-
-    <!-- Hamburger Menu -->
-    <label for="toggle" class="hamburger">
-        <img src="assets/logo.svg" alt="logo">
-        <i class="fas fa-bars ya"></i>
-    </label>
+    <!-- responsive icon -->
+    <div class="toggle">
+        <img src="assets/logo.svg" alt="Liz Faria logo">        
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+    </div>
+    <!-- responsive icon ends -->
     
     <!-- HEADER BEGINS -->
-    <header>
+    <header id="home">
         <!-- main nav begins -->
         <nav class="header__nav">
             <div class="wrapper">
                 <div class="nav-contents">
-                    <img src="assets/logo.svg" alt="logo">
+                <div class="nav-contents--logo"></div>
                     <ul>
                         <li>
                             <a href="#about">
-                                about me
+                                about
                             </a>
                         </li>
                         <li>
@@ -54,11 +55,11 @@
             </div>
         </nav>
         <!-- main nav ends -->
+
         <!-- responsive nav begins -->
         <nav class="header__nav--responsive">
-            <input type="checkbox" id="toggle" name="toggle">
+            <div id="toggle">
             <div class="nav-contents">
-                <!-- <img src="assets/logo.svg" alt="logo"> -->
                 <ul class="ul__responsive">
                     <li>
                         <a href="#about">
@@ -83,20 +84,13 @@
                 </ul>
             </div>
         </nav>
-        <!-- <img class="header__logo" src="assets/logo.svg" alt="logo"> -->
         <div class="wrapper header__wrapper">
-            <div class="header--content">
-            
-                <div class="title">
-                    <!-- <img src="assets/logo.svg" alt="logo"> -->
-
-                    <!-- <h1>Liz</h1> 
-                    <h1>Faria</h1> -->
-                    <!-- <img src="assets/logo.svg" alt="logo"> -->
-                    <h2 class="header-2"><br>Web <br>Developer</h2>
-                    <!-- <h2 class="header-2--responsive">Web Developer</h2> -->
-                </div>
+            <div class="title">
+                <img src="assets/logo.svg" alt="logo" id="nav-logo">
             </div>
+            <h2 class="header-2">
+                Web<br>Developer
+            </h2>
         </div>
     </header>
     <!-- HEADER ENDS -->
@@ -104,26 +98,17 @@
     <!-- ABOUT ME BEGINS -->
     <section id="about">
         <h3>About Me
-            <img src="assets/end-tag.svg" alt="">
+            <img src="assets/end-tag.svg" alt="closing tag icon"  class="close-tag">
         </h3>
             <div class="wrapper">
-                <div class="about--content clearfix">
-                    <div class="image--container">
-                        <img class="image" src="assets/headshot.jpg" alt="headshot of Liz Faria">
-                    </div>
-                    <span class="paragraph"> 
+                <div class="about--content paragraph">
                         <p> Hi, my name's Liz Faria. I’m a web developer based in Toronto. I love the limitless possibilities for learning and creating that come with web development.
-                        I'm dedicatd to writing organized code, and producing dynamic, responsive, accessible sites. I'm looking to join a team that values collaborative problem-solving,
-                        communication and fun. </p>
-                        <p class="paragraph--large-display">I love solving problems and in web development, a case is never closed. Languages are constantly developing, and other developers stretch my imagination of what is possible everyday. I work hard
+                        I'm dedicatd to writing organized code, and producing dynamic, responsive, accessible sites. I'm looking to join a team that values collaborative problem-solving, communication and fun. </p>
+                        <p class="paragraph--large-display">I'm a code detective. I solve problems, and in web development a case is never closed. Languages are constantly evolving, and other developers stretch my imagination of what is possible everyday. I work hard
                         because I want to be part of expanding possibilities and creating content that makes the web awesome.</p>
-
-                        
-                        <p>View my resume 
-                            <a target="_blank" href="/liz-faria-cv.pdf" class="link--resume">here</a>
+                        <p class="link--resume"> 
+                            <a target="_blank" href="/liz-faria-cv.pdf">View my resume</a>
                         </p>
-                        
-                     </span>
                 </div>
             </div>
     </section>
@@ -132,170 +117,159 @@
     <!-- PORTFOLIO BEGINS -->
     <section id="portfolio">
         <div class="wrapper">
-        <h3>Portfolio
-            <img src="assets/end-tag.svg" alt="">
-        </h3>
-                <div class="projects--container .flickity-js">
-                    <figure>
-                        <div class="image--container">
-                            <a href="https://lizfaria.github.io/on-the-case/" target="_blank">
-                                <img src="assets/portfolio-1.png" alt="mac desktop mockup of JavaScript API project">
-                            </a>
-                        </div>
-                        <figcaption>
-                            <h4>JavaScript/jQuery API</h4>
-                            <p class="paragraph--caption"> <span>Google Maps</span> <span>AJAX</span> <span>Team Programming</span> </p>
-                            <p class="paragraph--description">Using Google Maps and Refuge APIs, this site enables users to find accessible and unisex washrooms</p>
-                            <p class="figcaption__link">
-                                <a href="https://lizfaria.github.io/on-the-case/" target="_blank">Check it Out</a>
-                            </p>
-                        </figcaption>
-                    </figure>
-                    
-                    <figure>
-
-                        <figcaption>
-                            <h4>React API</h4>
-                            <p class="paragraph--caption">
-                                <span>React Router</span>
-                                <span>AXIOS</span>
-                                <span>Firebase Database & Authentication</span>
-                                <span>Team Programming</span>
-                            </p>
-                            <p class="paragraph--description">Users can search for comics from the Marvel API, and login to save any results to their personal collection</p>
-                            <p class="figcaption__link">
-                                <a href="https://devavengers-f4922.firebaseapp.com/" target="_blank">Check it Out</a>
-                            </p>
-                        </figcaption>
-                        
-                        <div class="image--container">
-                            <a href="https://devavengers-f4922.firebaseapp.com/" target="_blank">
-                                <img src="assets/portfolio-2.png" alt="mac desktop mockup of React API project">
-                            </a>
-                        </div>
-                        
-                    
-                    </figure>
-                    <figure>
-                        <figcaption>
-                            <h4>JavaScript API</h4>
-                            <p class="paragraph--caption">
-                                <span>jQuery</span>
-                            </p>
-                            <P class="paragraph--description">An application that displays recipe data from the Yummly Api using user search input and allergy / dietary restriction filters </P>
-                            <p class="figcaption__link">
-                                <a href="/mangia" target="_blank">Check it Out</a>
-                            </p>
-                        </figcaption>
-                    
-                        <div class="image--container">
-                            <a href="/mangia" target="_blank">
-                                <img src="assets/portfolio-mangia.png" alt="mac desktop mockup of JavaScript project">
-                            </a>
-                        </div>
-                    
-                    </figure>
-                    <figure>
-                        <div class="image--container">
-                            <a href="/maxshop" target="_blank">
-                                <img src="assets/portfolio-4.png" alt="mac desktop mockup of CSS PSD Conversion project">
-                            </a>
-                        </div>
-                        <figcaption>
-                            <h4>CSS PSD Conversion</h4>
-                            <p class="paragraph--caption"> <span>CSS</span> <span>SASS</span> <span>Responsive</span> <span>jQuery</span>  </p>
-                            <P class="paragraph--description">Conversion of a Fashion PSD into an interactive single-page site</P>
-                            <p class="figcaption__link">
-                                <a href="/maxshop" target="_blank">Check it Out</a>
-                            </p>
-                        </figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <figcaption>
-                            <h4>JavaScript Quiz</h4>
-                            <p class="paragraph--caption">
-                                <span>jQuery</span>
-                            </p>
-                            <P class="paragraph--description">A JavaScript quiz that tells you where to go in Toronto on a sunny day</P>
-                            <p class="figcaption__link">
-                                <a href="/sunny-day-quiz" target="_blank">Check it Out</a>
-                            </p>
-                        </figcaption>
-
-                        <div class="image--container">
-                            <a href="/sunny-day-quiz" target="_blank">
-                                <img src="assets/portfolio-3.png" alt="mac desktop mockup of JavaScript project">
-                            </a>
-                        </div>
-                    </figure>
-                </div>
-            </div>
+            <h3>Portfolio
+                <img src="assets/end-tag.svg" alt="closing tag icon"  class="close-tag">
+            </h3>
+            <div class="projects--container .flickity-js">
+                <figure>
+                    <div class="image--container">
+                        <a href="https://lizfaria.github.io/on-the-case/" target="_blank">
+                            <img src="assets/portfolio-1.png" alt="mac desktop mockup of JavaScript API project">
+                        </a>
+                    </div>
+                    <figcaption>
+                        <h4>JavaScript/jQuery API</h4>
+                        <p class="paragraph--caption"> <span>Google Maps</span> <span>AJAX</span> <span>Pair-Programming</span> </p>
+                        <p class="paragraph--description">Using Google Maps and Refuge APIs, this site enables users to find accessible and unisex washrooms</p>
+                        <p class="figcaption__link">
+                            <a href="https://lizfaria.github.io/on-the-case/" target="_blank">Check it Out</a>
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <figcaption>
+                        <h4>React API</h4>
+                        <p class="paragraph--caption">
+                            <span>React Router</span>
+                            <span>AXIOS</span>
+                            <span>Firebase Database & Authentication</span>
+                            <span>Team- Programming</span>
+                        </p>
+                        <p class="paragraph--description">Users can search for comics from the Marvel API, and login to save any results to their personal collection</p>
+                        <p class="figcaption__link">
+                            <a href="https://devavengers-f4922.firebaseapp.com/" target="_blank">Check it Out</a>
+                        </p>
+                    </figcaption>               
+                    <div class="image--container">
+                        <a href="https://devavengers-f4922.firebaseapp.com/" target="_blank">
+                            <img src="assets/portfolio-2.png" alt="mac desktop mockup of React API project">
+                        </a>
+                    </div>
+                </figure>
+                <figure>
+                    <figcaption>
+                        <h4>JavaScript API</h4>
+                        <p class="paragraph--caption">
+                            <span>ES6</span>
+                        </p>
+                        <P class="paragraph--description">An application that displays recipe data from the Yummly Api using user search input and allergy / dietary restriction filters </P>
+                        <p class="figcaption__link">
+                            <a href="/mangia" target="_blank">Check it Out</a>
+                        </p>
+                    </figcaption>
+                    <div class="image--container">
+                        <a href="/mangia" target="_blank">
+                            <img src="assets/portfolio-mangia.png" alt="mac desktop mockup of JavaScript project">
+                        </a>
+                    </div>
+                </figure>
+                <figure>
+                    <div class="image--container">
+                        <a href="/maxshop" target="_blank">
+                            <img src="assets/portfolio-4.png" alt="mac desktop mockup of CSS PSD Conversion project">
+                        </a>
+                    </div>
+                    <figcaption>
+                        <h4>CSS PSD Conversion</h4>
+                        <p class="paragraph--caption"> <span>CSS</span> <span>SASS</span> <span>Responsive</span> <span>jQuery</span>  </p>
+                        <P class="paragraph--description">Conversion of a Fashion PSD into an interactive single-page site</P>
+                        <p class="figcaption__link">
+                            <a href="/maxshop" target="_blank">Check it Out</a>
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <figcaption>
+                        <h4>JavaScript Quiz</h4>
+                        <p class="paragraph--caption">
+                            <span>jQuery</span>
+                        </p>
+                        <P class="paragraph--description">A JavaScript quiz that tells you where to go in Toronto on a sunny day</P>
+                        <p class="figcaption__link">
+                            <a href="/sunny-day-quiz" target="_blank">Check it Out</a>
+                        </p>
+                    </figcaption>
+                    <div class="image--container">
+                        <a href="/sunny-day-quiz" target="_blank">
+                            <img src="assets/portfolio-3.png" alt="mac desktop mockup of JavaScript project">
+                        </a>
+                    </div>
+                </figure>
+            </div> <!-- projects container ends -->
+        </div> <!-- wrapper ends -->
     </section>
     <!-- PORTFOLIO ENDS -->
 
     <!-- SKILLS BEGINS -->
     <section id="skills">
         <div class="wrapper">
-            <h3>My Skills
-                <img src="assets/end-tag.svg" alt="">
-
+            <h3>
+                My Skills
+                <img src="assets/end-tag.svg" alt="closing tag icon" class="close-tag">
             </h3>
-            <!-- <div class="wrapper"> -->
                 <div class="container">
-                    <ul>                    
-                        <li class="html">
-                            <i title="html5" aria-hidden="true" class="fab fa-html5"></i>
-                            <p class="skill paragraph">HTML</p>
-                        </li>
-                        <li class="css">
-                            <i title="css" aria-hidden="true"  class="fab fa-css3-alt"></i>
-                            <p class="skill paragraph">CSS</p>
-                        </li>
-                        <li class="react">
-                            <i title="react" aria-hidden="true"  class="fab fa-react"></i>
-                            <p class="skill paragraph">React</p>
-                        </li>
-                        <li class="JavaScript">
-                            <i title ="JavaScript" aria-hidden="true"  class="fab fa-js"></i>
-                            <p class="skill paragraph">JavaScript</p>
-                        </li>
-                        <li class="jQuery">
-                            <i title="jQuery" aria-hidden="true" <i class="devicon-jquery-plain"></i>
-                            <p class="skill paragraph">jQuery</p>
-                        </li>
-                        <li class="rwd">
-                        </li>
-                        <li class="sass">
-                            <i title="sass" aria-hidden="true"  class="fab fa-sass"></i>
-                            <p class="skill paragraph">Sass</p>
-                        </li>
-                        <!-- <li class="github" title="Github">
-                            <i class="fab fa-github"></i>
-                            <p class="skill paragraph">Github</p>
-                        </li> -->
-                        <li class="git" title="Git">
-                            <i class="devicon-git-plain"></i>
-                            <p class="skill paragraph">Git</p>
-                        </li>
-                        <li title ="gulp" class="gulp">
-                            <i class="devicon-gulp-plain"></i>
-                            <p class="skill paragraph">Gulp</p>
-                        </li>
-                        <li class="terminal" title="terminal">
-                            <i class="fas fa-terminal"></i>
-                            <p class="skill paragraph">Terminal</p>
-                        </li>
-                        <li title="visual-studio" class="visual-studio">
-                            <i class="devicon-visualstudio-plain"></i>
-                            <p class="skill paragraph">VS Code
-                            </p>
-                        </li>
-                        <li title="firebase" class="firebase">
-                        </li>
-                    </ul>
-                </div>
-            <!-- </div> -->
+                <ul>
+                    <li class="react">
+                        <img src="assets/logos/react-original.svg" alt="React Logo">
+                        <p class="skill paragraph">React</p>
+                    </li>
+                    <li class="JavaScript">
+                        <img src="assets/logos/javascript-plain.svg" alt="JavaScript Logo">
+                        <p class="skill paragraph">JavaScript</p>
+                    </li>
+                    <li class="jQuery">
+                        <img src="assets/logos/jquery-original.svg" alt="jQuery Logo">
+                        <p class="skill paragraph">jQuery</p>
+                    </li>
+                    <li class="css">
+                        <img src="assets/logos/css3-original.svg" alt="CSS Logo">
+                        <p class="skill paragraph">CSS3</p>
+                    </li>
+                    <li class="html">
+                        <img src="assets/logos/html5-original.svg" alt="HTML Logo">
+                        <p class="skill paragraph">HTML5</p>
+                    </li>
+                    <li class="sass">
+                        <img src="assets/logos/sass-original.svg" alt="SASS Logo">
+                        <p class="skill paragraph">Sass</p>
+                    </li>
+                    <li title="firebase" class="firebase">
+                        <img src="assets/logos/firebaseIcon.svg" alt="Firebase Logo">
+                        <p class="skill paragraph">Firebase</p>
+                    </li>
+                    <li class="github" title="GitHub">
+                        <img src="assets/logos/github-original.svg" alt="Github Logo">
+                        <p class="skill paragraph">GitHub</p>
+                    </li>
+                    <li class="git" title="Git">
+                        <img src="assets/logos/git-original.svg" alt="Git Logo">
+                        <p class="skill paragraph">Git</p>
+                    </li>
+                    <li title="gulp" class="gulp">
+                        <img src="assets/logos/gulp-plain.svg" alt="Gulp Logo">
+                        <p class="skill paragraph">Gulp</p>
+                    </li>
+                    
+                    <li title="visual-studio" class="visual-studio">
+                        <img src="assets/logos/visualstudio-plain.svg" alt="Visual Studio Logo">
+                        <p class="skill paragraph">VS Code</p>
+                    </li>
+                    <li class="terminal" title="terminal">
+                        <i class="fas fa-terminal" title="terminal" aria-hidden="true"></i>
+                        <p class="skill paragraph">Terminal</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <!-- SKILLS ENDS -->
@@ -304,11 +278,7 @@
     <section id="contact">
        <div class="wrapper">
             <div class="container">
-                <h3>Let's Chat
-                    <img src="assets/end-tag.svg" alt="">
-                </h3>
                 <div class="links--container small-display">
-                    <!-- <img src="assets/logo.svg" alt="logo"> -->
                     <div class="social">
                         <ul>
                             <li>
@@ -333,42 +303,29 @@
                             </li>
                             <li>
                                 <a target="_blank" href="mailto:hello@lizfaria.ca"><i class="fas fa-envelope" aria-hidden='true' title='e-mail'></i></a>
-                                
                             </li>
                         </ul>
                     </div>
-
-                    <!-- <div class="email">
-                        <a href="mailto:hello@lizfaria.ca">
-                            <h4>hello@lizfaria.ca</h4>
-                        </a>
-                    </div> -->
-
                 </div>
                 <div class="contact-container">
-                    <!-- <p class="paragraph small-display">or use the contact form to get in touch</p> -->
-                    
                     <div class="contact--info">
                         <form action="https://formspree.io/hello@lizfaria.ca" method="POST" class="contact__form">
                             <div class="input--container">
                                 <label for="name"></label>
                                 <input type="text" name="name" required placeholder="your name">
-                    
+
                                 <label for="email"></label>
-                                    <input type="email" name="email" placeholder="your email" required>
+                                <input type="email" name="email" placeholder="your email" required>
                             </div>
                 
                             <label for="message"></label>
                             <textarea name="message">Hey Liz, </textarea>
                 
-                            <input type="submit" class="form__submit" id="button" value="send">
+                            <input type="submit" class="form__submit" id="button-small" value="GET IN TOUCH">
                         </form>
                 
                         <div class="links--container large-display">
-                            <!-- <img src="assets/logo.svg" alt="logo"> -->
-                            <!-- <div class="email">
-                                <a target="_blank" href="mailto:hello@lizfaria.ca"><h4>hello@lizfaria.ca</h4></a>
-                            </div> -->
+                            <input type="submit" class="form__submit" id="button" value="GET IN TOUCH">
                             <div class="social">
                                <ul>
                                     <li>
@@ -399,88 +356,20 @@
                         </div>
                    </div>
             </div>
-            </div>
-    
+        </div>
     </section>
     <!-- CONTACT ME ENDS -->
 
     <!-- FOOTER BEGINS -->
     <footer>
     <div class="wrapper">
-        <p class="paragraph">&copy Liz Faria 2018 <span>photography and logo by &copy Will Parks 2018</span></photos></p>
+        <p class="paragraph">&copyLiz Faria 2018 <span>photos and logo by Will Parks</span></photos></p>
     </div>
     </footer>
     <!-- FOOTER ENDS -->
 
     <script src="https://code.jQuery.com/jQuery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-smooth-scroll/2.1.2/jQuery.smooth-scroll.min.js"></script> -->
-
-    <script>
-        $(function () {
-                // Add smooth scrolling to all links
-                $("a").on('click', function (event) {
-
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
-
-                        // Store hash
-                        var hash = this.hash;
-
-                        // Using jQuery’s animate() method to add smooth page scroll
-                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function () {
-
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    } // End if
-                });
-            });
-   
-        $(function () {
-
-            let active = false;
-            $('.hamburger').click(function(e) { 
-                 if (active) {
-                    $('.ya').addClass('fa-bars').removeClass('fa-times');
-                    $('.header__nav--responsive').fadeOut();
-                    active = false;
-                } else{
-                     $('.ya').addClass('fa-times').removeClass('fa-bars');
-                     $('.header__nav--responsive').fadeIn();
-                     active = true;
-                }
-            });
-            $('.ul__responsive>li').on('click', () => {
-                $('.ya').addClass('fa-bars').removeClass('fa-times');
-                $('.header__nav--responsive').fadeOut();
-                        active = false;
-
-            })
-        });
-
-        $(function() {
-            $('.projects--container').flickity({
-                wrapAround: true,
-                watchCSS: true,
-                freeScroll: true
-            });
-        });
-
-        if ($(window).width() < 480) {   
-             $('#button').attr('value', 'get in touch');
-        }
-            
-        
-          
-    </script>
-
+    <script src="./script.js"></script>
 </body>
 </html>
-
-<!--THEME FOREST-ardis-creative-agency-psd-template -->

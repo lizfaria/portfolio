@@ -1,24 +1,16 @@
 footer {
-    text-align:center;
-    color: $white;
-    background-color: $blacker;
     margin: 0;
-    // border-radius:0;
-    
-
+    background-color: $blacker;
+    color: $white;
+    text-align:center;
+    text-transform: uppercase;
     p {
-        padding: 0;
         margin: 0;
+        padding: 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         @media(max-width:1000px) {
-            display: none;
+            display:none;
         }
     }
-
-    
-    // height:100vh;
-    // width:100%;
-    // background-image: url(../../assets/hero/footer-1.jpg);
-    // background-size: cover;
 }
