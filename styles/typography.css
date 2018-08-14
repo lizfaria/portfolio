@@ -85,6 +85,20 @@ h4 {
   font-weight: 700;
 }
 
+.paragraph {
+  font-family: "PT Sans", sans-serif;
+  color: #5a5858;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .paragraph {
+    font-size: 1rem;
+  }
+}
+
 .paragraph--caption {
   text-align: center;
   color: #5a5858;
@@ -149,8 +163,11 @@ h4 {
   bottom: 0;
   background-color: #F7941E;
   opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 .form__submit:active {
@@ -159,8 +176,11 @@ h4 {
 }
 
 .form__submit:active::before {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
   opacity: 1;
 }
 
@@ -168,13 +188,19 @@ h4 {
   border: 1px solid blue;
 }
 
-.figcaption__link {
+.form__submit:hover {
+  color: #5a5858;
+  -webkit-box-shadow: grey;
+          box-shadow: grey;
+}
+
+.figcaption__link, .link--resume {
   -webkit-box-shadow: -1px 1px 4px #BDBEC0;
           box-shadow: -1px 1px 4px #BDBEC0;
   background: #F7941E;
 }
 
-.figcaption__link, .form__submit {
+.figcaption__link, .form__submit, .link--resume {
   width: 200px;
   height: 40px;
   position: relative;
@@ -196,16 +222,16 @@ h4 {
 }
 
 @media (max-width: 400px) {
-  .figcaption__link, .form__submit {
+  .figcaption__link, .form__submit, .link--resume {
     width: 150px;
     margin: 0 auto;
   }
-  .figcaption__link a, .form__submit a {
+  .figcaption__link a, .form__submit a, .link--resume a {
     padding: 0 !important;
   }
 }
 
-.figcaption__link a, .form__submit a {
+.figcaption__link a, .form__submit a, .link--resume a {
   text-decoration: none;
   color: #222;
   padding: 34px;
@@ -218,12 +244,12 @@ h4 {
 }
 
 @media (max-width: 500px) {
-  .figcaption__link, .form__submit {
+  .figcaption__link, .form__submit, .link--resume {
     margin: 0;
   }
 }
 
-.figcaption__link::before, .form__submit::before {
+.figcaption__link::before, .form__submit::before, .link--resume::before {
   content: '';
   position: absolute;
   top: 0;
@@ -232,93 +258,33 @@ h4 {
   right: 50%;
   opacity: 0;
   background-color: #222;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
-.figcaption__link:hover a, .form__submit:hover a {
+.figcaption__link:hover a, .form__submit:hover a, .link--resume:hover a {
   color: #F7941E;
 }
 
-.figcaption__link:hover::before, .form__submit:hover::before {
+.figcaption__link:hover::before, .form__submit:hover::before, .link--resume:hover::before {
   opacity: 1;
   left: 0;
   right: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-}
-
-.paragraph {
-  font-family: "PT Sans", sans-serif;
-  color: #5a5858;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-@media (max-width: 480px) {
-  .paragraph {
-    font-size: 1rem;
-  }
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 .link--resume {
-  width: 200px;
-  height: 40px;
-  margin: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  border-radius: 2px;
-  -webkit-box-shadow: -1px 1px 4px #BDBEC0;
-          box-shadow: -1px 1px 4px #BDBEC0;
-  background: #F7941E;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: bold;
+  margin: 20px 0 0 0;
 }
 
 .link--resume a {
-  text-decoration: none;
-  color: #222;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  -webkit-transition: 0.3s all ease;
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
-  z-index: 4;
-}
-
-.link--resume::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  right: 50%;
-  opacity: 0;
-  background-color: #222;
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-}
-
-.link--resume:hover a {
-  color: #F7941E;
-}
-
-.link--resume:hover::before {
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
+  padding: 0;
 }
 /*# sourceMappingURL=typography.css.map */

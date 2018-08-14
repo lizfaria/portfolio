@@ -1,4 +1,3 @@
-
 // fonts
 $header-font: 'PT Serif', serif;
 $body-font: 'PT Sans', sans-serif;
@@ -19,6 +18,18 @@ $dark-red: #BF1E2D;
     justify-content: center;
     align-items:center;
 } 
+
+@mixin trans03s {
+    transition: all .3s ease-in-out;
+    -webkit-transition:0.3s all ease;
+    transition:0.3s ease all;
+}
+
+@mixin trans05s {
+    transition: all .5s ease-in-out;
+    -webkit-transition:0.5s all ease;
+    transition:0.5s ease all;
+}
 
 h1 {
     font-size: 5.5rem; 
@@ -65,6 +76,7 @@ h2 {
 .header-2--responsive {
     display: none;
 }
+
 @media(max-width:600px) {
     .header-2 {
         display:none;
@@ -73,6 +85,7 @@ h2 {
         display:block;
     }
 }
+
 h3 {
     padding: 0;
     margin: 0;
@@ -81,7 +94,6 @@ h3 {
     font-size: 2.5rem;
     font-weight: 700;
     z-index:3;
-    
     img.close-tag {
         width: 35px;
         margin-left:10px;
@@ -98,6 +110,17 @@ h4 {
     color:$blacker;
     font-size:1.4rem;
     font-weight:700;
+}
+
+.paragraph {
+    font-family: $body-font;
+    color: $black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height:1.5;
+    @media(max-width:480px) {
+        font-size: 1rem;
+    }
 }
 
 .paragraph--caption {
@@ -133,10 +156,7 @@ h4 {
     text-decoration:none;
     color:$blacker;
     z-index:4;
-    transition: all .3s ease-in-out;
-    -webkit-transition:0.3s all ease;
-    transition:0.3s ease all;
-
+    @include trans03s();
     &::before {
         content:'';
         position:absolute;
@@ -145,28 +165,30 @@ h4 {
         bottom:0;
         background-color:$orange;
         opacity:0;
-        -webkit-transition:0.5s all ease;
-        transition:0.5s all ease;
+        @include trans05s();
     }
     &:active {
         box-shadow:0;
         &::before {
-        -webkit-transition:0.5s all ease;
-        transition:0.5s all ease;
+        @include trans05s();
         opacity:1;
         }
     }
     &:focus{
         border:1px solid blue;
     }
+    &:hover {
+        color: $black;
+        box-shadow:grey;
+    }
 }
 
-.figcaption__link {
+.figcaption__link, .link--resume{
     box-shadow:-1px 1px 4px $grey;
     background: $orange;
 }
 
-.figcaption__link, .form__submit {
+.figcaption__link, .form__submit, .link--resume {
     width:200px;
     height:40px;
     position:relative;
@@ -188,9 +210,7 @@ h4 {
         text-decoration:none;
         color:$blacker;
         padding:34px;
-        transition: all .3s ease-in-out;
-        -webkit-transition:0.3s all ease;
-        transition:0.3s ease all;
+        @include trans03s();
         z-index:4;
     }
     @media(max-width:500px) {
@@ -205,8 +225,7 @@ h4 {
         right:50%;
         opacity:0;
         background-color:$blacker;
-        -webkit-transition:0.5s all ease;
-        transition:0.5s all ease;
+        @include trans05s();
     }
     &:hover {
         a {
@@ -216,74 +235,14 @@ h4 {
             opacity:1;
             left:0;
             right:0;
-            -webkit-transition:0.5s all ease;
-            transition:0.5s all ease;
+            @include trans05s();
         }
     } 
-}
-
-.paragraph {
-    font-family: $body-font;
-    color: $black;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height:1.5;
-    @media(max-width:480px) {
-        font-size: 1rem;
-    }
 }
 
 .link--resume {
-    width:200px;
-    height:40px;
-    margin: 20px 0;
-    @include flexCenter;
-    position:relative;
-    border-radius: 2px;
-    box-shadow:-1px 1px 4px $grey;
-    background: $orange;
-    text-align:center;
-    letter-spacing: 1px;
-    text-transform:uppercase;
-    font-weight: bold;
+    margin: 20px 0 0 0;
     a {
-        text-decoration:none;
-        color :$blacker;
-        transition: all .4s ease-in-out;
-        -webkit-transition:0.3s all ease;
-        transition:0.3s ease all;
-        z-index:4;
+        padding: 0;
     }
-    &::before {
-        content:'';
-        position:absolute;
-        top:0;
-        bottom:0;
-        left:50%;
-        right:50%;
-        opacity:0;
-        background-color:$blacker;
-        -webkit-transition:0.5s all ease;
-        transition:0.5s all ease;
-    }
-    &:hover {
-        a {
-            color: $orange;
-        }
-        &::before {
-            left:0;
-            right:0;
-            opacity:1;
-            -webkit-transition:0.5s all ease;
-            transition:0.5s all ease;
-        }
-    } 
 }
-
-
-
-
-
-
-
-

@@ -62,6 +62,9 @@ app.projectSlider = function () {
         // sticky logo
 app.stickyLogo = function() {
     const logo = document.querySelector('#nav-logo');
+    logo.onclick = function () {
+        window.location.href = '#home';
+    };
     const navContent = document.querySelector('.nav-contents');
     const heroTitle = document.querySelector('.title');
     const topOfLogo = logo.offsetTop;
