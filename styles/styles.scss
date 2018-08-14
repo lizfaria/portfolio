@@ -71,7 +71,6 @@ section {
         border: 3px solid $orange;
         background: white;
         box-shadow:-1px 1px 4px $grey;
-
         @media(max-width:768px){
             flex-direction:column;
             justify-content:center;
@@ -84,7 +83,7 @@ section {
         figcaption {
             width:50%;
             margin-right: 0 5%;
-            @include flexCenter
+            @include flexCenter;
             flex-direction: column;
             @media(max-width:768px){
                 width:100%;
@@ -97,7 +96,7 @@ section {
 
         .image--container{
             width:50%;
-            @include flexCenter
+            @include flexCenter;
             text-align:center;
             img {
                 max-width:90%;
@@ -158,10 +157,10 @@ section {
     .container {
         margin-top:7%;
         ul {
-            max-width:900px;
+            max-width:1075px;
             margin: 0 auto;
             padding:0;
-            @include flexCenter
+            @include flexCenter;
             flex-flow:row wrap;
         }
         li {
@@ -356,13 +355,11 @@ section {
                 &:hover a {
                     color:$black;
                 }
-                
             }
             a{
                 color:$blacker;
                 text-decoration:none;
             }
-            
         }
     }
     .contact__form {

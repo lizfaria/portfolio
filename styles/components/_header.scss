@@ -143,11 +143,6 @@ img.fixed-logo {
     @include boxShadow()
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-}
 .icon {
     display: none;
     position: fixed;
@@ -175,7 +170,7 @@ body {
 .hamburger::before, .hamburger::after {
     content: '';
     @include hamburgerLines();
-    height:2px;
+    height:3px;
     @media(max-width:480px){
         height:2px;
     }
@@ -213,7 +208,6 @@ body {
     .main-navigation {
         display: none;
     }
-
     .header__nav--responsive {
         background: rgba(255,255,255,.9);
         position:fixed;
@@ -223,11 +217,9 @@ body {
         padding-top: 90px;
         z-index:2000;
         width:40%;     
-
         @media(max-width:540px) {
             width:100%;
         }
-
         ul {
             margin:100px auto;
             padding:0;
